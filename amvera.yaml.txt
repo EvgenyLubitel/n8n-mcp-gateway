@@ -1,0 +1,12 @@
+meta:
+  version: 1.0
+  name: n8n-mcp-gateway
+  description: MCP Gateway + AI Orchestrator for n8n
+  toolchain: python
+
+python:
+  version: 3.11
+  requirements: requirements.txt
+
+start:
+  cmd: uvicorn mcp_server:app --host 0.0.0.0 --port 8000
