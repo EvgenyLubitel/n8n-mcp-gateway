@@ -33,7 +33,7 @@ flowchart LR
     C --> F[AITUNNEL<br/>GPT-4]
 
 
-[UploaInvoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/health"ding deepseek_powershell_20260623_a57c43.ps1…]()
+Invoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/health"
 
 
 
