@@ -38,8 +38,26 @@ flowchart LR
 ✅ 9 MCP-инструментов для управления n8n
 ✅ Production-ready деплой (Amvera)
 
+## 🧪 Тестирование
+
+### Проверка здоровья
+
+```powershell
+Invoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/health"
+```
+
+### AI-запрос
+
+```powershell
 $body = @{query = "Покажи все мои workflow"} | ConvertTo-Json
 Invoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/ask" -Method POST -Body $body -ContentType "application/json"
+```
+
+### Прямой запрос к воркфлоу
+
+```powershell
+Invoke-RestMethod -Uri "https://langchain-evgenylubitel.amvera.io/webhook/hello-mcp"
+```
 
 
 
