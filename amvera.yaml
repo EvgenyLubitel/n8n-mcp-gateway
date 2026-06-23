@@ -9,4 +9,4 @@ python:
   requirements: requirements.txt
 
 start:
-  cmd: uvicorn mcp_server:app --host 0.0.0.0 --port 8000
+  cmd: uvicorn mcp_server:app --host 0.0.0.0 --port 80
