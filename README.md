@@ -32,8 +32,14 @@ flowchart LR
     D --> E[Воркфлоу n8n]
     C --> F[AITUNNEL<br/>GPT-4]
 
+✅ MCP-сервер на Python (FastAPI)
+✅ AI-оркестратор через AITUNNEL
+✅ Полный REST-интерфейс к n8n
+✅ 9 MCP-инструментов для управления n8n
+✅ Production-ready деплой (Amvera)
 
-Invoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/health"
+$body = @{query = "Покажи все мои workflow"} | ConvertTo-Json
+Invoke-RestMethod -Uri "https://mcp-evgenylubitel.amvera.io/ask" -Method POST -Body $body -ContentType "application/json"
 
 
 
